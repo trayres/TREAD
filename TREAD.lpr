@@ -12,10 +12,14 @@ uses
    frmMain, model, mediators, views, observer;
 {$R *.res}
 
+var
+  MainForm : TMainForm;
+
 begin
   RequireDerivedFormResource := True;
   Application.Initialize;
-  Application.CreateForm(TMainForm, MainForm);
+  MainForm := TMainForm.Create(nil);
+  MainForm.Show;
   Application.Run;
 end.
 

@@ -24,9 +24,10 @@ type
 
   TSymbol = class(TSubject) {also declared as TSubject, for the Symbol editor}
   private
-    m_Pos: TPoint; {Object Location in World, in mm - use in terms of nm for PCB/IC layout}
+    FPosition : TPoint; {Object Location in World, in mm - use in terms of nm for PCB/IC layout}
   public
     constructor Create; override;
+//    property Position read FPosition write FPosition;
   public
     {Streaming}
     procedure SaveToFile(AFileName: string);
