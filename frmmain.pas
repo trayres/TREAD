@@ -15,6 +15,7 @@ type
     MenuItem1: TMenuItem;
     MenuItem2: TMenuItem;
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
+    procedure MenuItem2Click(Sender: TObject);
   private
     { private declarations }
   public
@@ -34,6 +35,11 @@ implementation
 procedure TMainForm.FormClose(Sender: TObject; var CloseAction: TCloseAction);
 begin
   Application.Terminate;
+end;
+
+procedure TMainForm.MenuItem2Click(Sender: TObject);
+begin
+
 end;
 
 end.

@@ -13,7 +13,8 @@ object MainForm: TMainForm
     object MenuItem1: TMenuItem
       Caption = 'File'
       object MenuItem2: TMenuItem
-        Caption = 'New Item2'
+        Caption = 'RunTest'
+        OnClick = MenuItem2Click
       end
     end
   end

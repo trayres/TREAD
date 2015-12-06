@@ -27,11 +27,14 @@ type
     FPosition : TPoint; {Object Location in World, in mm - use in terms of nm for PCB/IC layout}
   public
     constructor Create; override;
-//    property Position read FPosition write FPosition;
-  public
+    property Position : TPoint read FPosition write FPosition;
     {Streaming}
     procedure SaveToFile(AFileName: string);
     procedure LoadFromFile(AFileName: string);
+  end;
+
+  TSymbolLibrary = class(TSubject)
+
   end;
 
 {TFootprint = class(TSubject)
